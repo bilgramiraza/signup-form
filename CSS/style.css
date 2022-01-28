@@ -70,6 +70,17 @@ fieldset>div{
 label,input{
     line-height: 2rem;
 }
+input{
+    border-color: #E5E7EB;
+    border-radius: 5px;
+}
+.focus{
+    border-color: blue;
+    box-shadow: blue;
+}
+.error{
+    border-color: red;
+}
 button{
     width: fit-content;
     margin:1rem 0.5rem ;
@@ -78,6 +89,15 @@ button{
     font-size: larger;
     color: #fff;
 }
+a{
+    color:#596D48;
+    text-decoration: none;
+    font-weight: 700;
+}
+.formPanel>p{
+    margin: 1rem;
+}
 .credit>a{
     color: white;
+    text-decoration: underline;
 }
