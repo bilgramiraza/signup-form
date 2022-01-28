@@ -1,10 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:wght@400;700&display=swap');
 :root{
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 
 body{
     width: 100vw;
-    min-height: 100vh;
+    max-height: 100vh;
     display: flex;
     flex-direction: row;
 }
@@ -13,13 +15,33 @@ h1{
 }
 .sidePanel{
     width: 40%;
-    background-image: url(../Assets/Signup-cover.jpg)
+    height: 100vh;
+    background-image: url(../Assets/Signup-cover.jpg);
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
-.sidePanel>div{
-    height: 50%;
+.sidePanel>div:first-child{
+    height: 20%;
     width: 100%;
-    background-color: rgba(0 0 0/0.5);
+    margin-top: 30%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    font-family: 'Lobster', cursive;
     color:white
+}
+.sidePanel>div:last-child{
+    height: 10%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    color:white;
+    background-image: linear-gradient(rgba(0 0 0/0),rgba(0 0 0/1));
 }
 .formPanel{
     width: 60%;
@@ -29,6 +51,32 @@ h1{
 }
 form{
     width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+fieldset{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 1rem 0;
+    box-shadow: 0px 0px 2px 2px rgb(0 0 0 / 30%);
+}
+fieldset>div{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    margin: 0.5rem 1rem;
+}
+label,input{
+    line-height: 2rem;
+}
+button{
+    width: fit-content;
+    margin:1rem 0.5rem ;
+    padding: 1rem;
+    background-color: #596D48;
+    font-size: larger;
+    color: #fff;
 }
 .credit>a{
     color: white;
